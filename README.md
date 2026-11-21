@@ -12,27 +12,27 @@ The project follows a complete analytics workflow: planning in Miro, data proces
 # Data
 The dataset “Bright Coffee Shop Sales” contains one row per transaction line. It was supplied as an Excel workbook and converted to CSV 
 Field	Description
--transaction_id: Unique ID of the transaction
--transaction_date: Date of sale (2023-01-01 to 2023-06-30)
--transaction_time: Time of sale (06:00 – 20:59)
--transaction_qty: Number of units sold (1 – 8)
--store_id / store_location: Store identifier and name (Astoria, Lower Manhattan, Hell’s Kitchen)
--product_id: Product identifier
--unit_price: Price per unit (0.80 – 45.00); stored with a decimal comma, e.g. 3,1
--product_category: 9 categories (e.g. Coffee, Tea, Bakery)
--product_type: 29 product types (e.g. Barista Espresso, Scone)
--product_detail: 80 specific products, many with a size suffix (Sm / Rg / Lg)
+1. transaction_id: Unique ID of the transaction
+2. transaction_date: Date of sale (2023-01-01 to 2023-06-30)
+3. transaction_time: Time of sale (06:00 – 20:59)
+4. transaction_qty: Number of units sold (1 – 8)
+5. store_id / store_location: Store identifier and name (Astoria, Lower Manhattan, Hell’s Kitchen)
+6. product_id: Product identifier
+7. unit_price: Price per unit (0.80 – 45.00); stored with a decimal comma, e.g. 3,1
+8. product_category: 9 categories (e.g. Coffee, Tea, Bakery)
+9. product_type: 29 product types (e.g. Barista Espresso, Scone)
+10. product_detail: 80 specific products, many with a size suffix (Sm / Rg / Lg)
 
 # Summary Statistics
 Headline KPIs -Metric	Value
--Total revenue: $698,812.33
--Total units sold: 214,470
--Transactions: 149,116
--Trading days: 181
--Average revenue per day: R3,860.84
--Average transaction value: R4.69
--Units per transaction: 1.44
--Single-item transactions: 58.5%
+1. Total revenue: $698,812.33
+2. Total units sold: 214,470
+3. Transactions: 149,116
+4. Trading days: 181
+5. Average revenue per day: R3,860.84
+6. Average transaction value: R4.69
+7. Units per transaction: 1.44
+8. Single-item transactions: 58.5%
 
 # Methodology
 1.	Plan (Miro): designed the data-flow and architecture diagram, listed the key insights and calculations, and built a project Gantt chart.
@@ -43,14 +43,14 @@ Headline KPIs -Metric	Value
 6.	Communicate: prepared a CEO presentation with insights, recommendations and next steps
 
 # Key Insights 
-•	Coffee and Tea drive the business: together 66.7% of revenue (Coffee R270.0k, Tea R196.4k). Bakery and Drinking Chocolate add another 22%.
-•	Best-selling product types: Barista Espresso (R91.4k), Brewed Chai tea (R77.1k), Hot chocolate (R72.4k) and Gourmet brewed coffee ($70.0k).
-•	Low performers: Packaged Chocolate, Loose Tea, Branded and Flavours together make up only 5.4% of revenue. Flavours sells many units (10,511) at R0.80 each, while Coffee beans earn R40.1k from only 1,828 units.
-•	Morning peak: 08:00–10:59 produces 36.7% of revenue; the best 30-minute interval is 10:30 (R44,967).
-•	Flat afternoon: after 11:00 revenue per interval falls by about half to roughly R20k and stays there until closing. This 11:00–18:29 plateau is worth R310.7k (44.5% of revenue) and is the biggest opportunity. Trading from 20:00 is almost negligible (0.4%).
-•	Strong growth: monthly revenue rose 104% from January (R81.7k) to June (R166.5k), driven by more customers; growth slowed in June (+6.2%).
-•	Stores and days are balanced: the three stores are within 2.8% of each other and no weekday is weak, so the opportunity lies in time of day, not location or day.
-•	Small baskets: 58.5% of transactions contain one item and the average ticket is R4.69. Large cups earn the most revenue (R238.0k) from fewer units than Regular.
+1. Coffee and Tea drive the business: together 66.7% of revenue (Coffee R270.0k, Tea R196.4k). Bakery and Drinking Chocolate add another 22%.
+2. Best-selling product types: Barista Espresso (R91.4k), Brewed Chai tea (R77.1k), Hot chocolate (R72.4k) and Gourmet brewed coffee ($70.0k).
+3. Low performers: Packaged Chocolate, Loose Tea, Branded and Flavours together make up only 5.4% of revenue. Flavours sells many units (10,511) at R0.80 each, while Coffee beans earn R40.1k from only 1,828 units.
+4. Morning peak: 08:00–10:59 produces 36.7% of revenue; the best 30-minute interval is 10:30 (R44,967).
+5. Flat afternoon: after 11:00 revenue per interval falls by about half to roughly R20k and stays there until closing. This 11:00–18:29 plateau is worth R310.7k (44.5% of revenue) and is the biggest opportunity. Trading from 20:00 is almost negligible (0.4%).
+6. Strong growth: monthly revenue rose 104% from January (R81.7k) to June (R166.5k), driven by more customers; growth slowed in June (+6.2%).
+7. Stores and days are balanced: the three stores are within 2.8% of each other and no weekday is weak, so the opportunity lies in time of day, not location or day.
+8. Small baskets: 58.5% of transactions contain one item and the average ticket is R4.69. Large cups earn the most revenue (R238.0k) from fewer units than Regular.
 
 # Recommendations
 1.	Run marketing campaigns in slow time slots: afternoon coffee-or-tea plus bakery bundles, off-peak coupons and happy-hour offers on Large drinks after 15:00.
