@@ -1,7 +1,7 @@
 # Overview 
 Bright Coffee Shop has a new CEO whose mission is to grow revenue and improve product performance. This case study analyses six months of daily till transactions (149,116 transactions across three New York stores) to show which products earn the most, when the store performs best, how sales are trending, and what the business should do next.
 
-The project follows a complete analytics workflow: planning in Miro, data processing with SQL in Databricks, analysis and dashboards in Excel / Power BI, and a CEO presentation with recommendations. Headline result: revenue of R698,812, doubling from January to June, driven by Coffee and Tea and by a very strong morning rush.
+The project follows a complete analytics workflow: planning in Miro (data-flow diagram) with a project Gantt chart, data processing with SQL in Databricks, analysis in Excel with pivot tables and charts, an interactive sales dashboard, and a CEO presentation in PowerPoint with recommendations. Headline result: revenue of $698,812, doubling from January to June, driven by Coffee and Tea and by a very strong morning rush.
 
 # Objectives
 1.	Identify which products and categories generate the most revenue, and which perform poorly.
@@ -53,22 +53,28 @@ Headline KPIs -Metric	Value
 8. Small baskets: 58.5% of transactions contain one item and the average ticket is R4.69. Large cups earn the most revenue (R238.0k) from fewer units than Regular.
 
 # Recommendations
-1.	Run marketing campaigns in slow time slots: afternoon coffee-or-tea plus bakery bundles, off-peak coupons and happy-hour offers on Large drinks after 15:00.
-2.	Stock more of the best-selling items: raise par levels for the top product types before 08:00 and track stock-outs in peak slots.
-3.	Promote underperforming products: add-on prompts for syrups, counter placement and bundles for take-home items (beans, tea, merchandise), tested for eight weeks.
-4.	Grow basket size: meal-deal combos and staff prompts to upsize to Large.
-5.	Protect the morning rush: staff to the 08:00–11:00 curve and offer pre-ordering or an express lane.
-6.	Review very late trading (20:00–20:59) against staffing costs before deciding on action.
+1. Fill the afternoon: coffee-or-tea plus bakery bundles, off-peak offers and a 15:00–17:00 happy hour to lift the flat 11:00–18:00 plateau.
+2. Power the morning rush: raise par levels for the top four product types before 08:00, staff to the 08:00–11:00 peak and add mobile pre-ordering.
+3. Promote slow sellers: add-on prompts for syrups, take-home beans and tea at the till, and review the weakest items (Green beans, Green tea, Organic Chocolate), tested for eight weeks.
+4. Grow basket size: meal deals and upsizing to Large, aiming to lift the $4.69 average ticket towards $5.
+5. Store-specific playbooks: Lower Manhattan – test evening offers or shorter hours; Astoria – trial a 06:00 opening; Hell’s Kitchen – grow coffee-beans retail and review trading after 20:00 against staffing costs.
+6. Next steps: automate daily sales reporting, track performance across locations, and launch a loyalty programme built around peak time slots.
 
 # Tools Used
 1. Miro: Data-flow and architecture diagram, key insights and calculation plan, project Gantt chart
 2. Microsoft Excel: Excel-to-CSV conversion, pivot tables and charts, Excel dashboard
 3. Databricks (Delta Lake): Storage of Bronze, Silver and Gold tables
 4. SQL (Databricks SQL): Data cleaning, transformation, aggregation and ranking
-5. Power BI / Looker Studio: Interactive dashboard
-6. Microsoft PowerPoint / Canva: CEO presentation
+5. HTML/JavaScript: Interactive dashboard
+6. Microsoft PowerPoint : CEO presentation
 7. Microsoft Word: Methodology and project documentation
 8. GitHub: Version control and project submission
+
+# Repository Contents
+1. Project Description & Raw Data: Bright_Coffee_Shop___Case_Study_Description.pdf and Bright_Coffee_Shop_Sales_Database_raw_data.csv
+2. Project Planning: Bright_Coffee_Shop_Miro_Flowchart_Planning_and_Data_Processing.pdf and Bright_Coffee_Shop_Gantt_Chart.xlsx
+3. Data Processing: Bright_Coffee_Shop_Case_Study.SQL_File.sql, Bright_Coffee_Shop_Excel_Analysis.xlsx (pivot tables and graphs) and Bright_Coffee_Shop_Processed_Data.csv
+4. Project Presentation: Bright_Coffee_Shop_CEO_Presentation.pptx and Bright_Coffee_Shop_Sales_Dashboard.html (download, then open in a web browser)
 
 
 
